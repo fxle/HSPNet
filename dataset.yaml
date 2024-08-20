@@ -1,0 +1,36 @@
+# VCOD Datasets
+moca_mask_tr:
+  {
+    root: "/public/home/xxx/MoCA-Video-Train",
+    image: { path: "*/Frame", suffix: ".jpg" },
+    mask: { path: "*/GT", suffix: ".png" },
+    pred: { path: "*/Pred", suffix: ".png" },
+  }
+moca_mask_te:
+  {
+    root: "/public/home/xxx/MoCA-Video-Test",
+    image: { path: "*/Frame", suffix: ".jpg" },
+    mask: { path: "*/GT", suffix: ".png" },
+    pred: { path: "*/Pred", suffix: ".png" },
+  }
+cad:
+  {
+    root: "/public/home/xxx/CamouflagedAnimalDataset",
+    image: { path: "*/Frame", suffix: ".png" },
+    mask: { path: "*/GT", suffix: ".png" },
+  }
+
+# ICOD Datasets
+cod10k_tr:
+  {
+    root: "/public/home/xxx/COD10K_train",
+    image: { path: "Imgs", suffix: ".jpg" },
+    mask: { path: "GT", suffix: ".png" },
+  }
+cod10k_te:
+  {
+    root: "/public/home/xxx/COD10K_test",
+    image: { path: "Imgs", suffix: ".jpg" },
+    mask: { path: "GT", suffix: ".png" },
+  }
+
